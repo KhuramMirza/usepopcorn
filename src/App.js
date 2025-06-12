@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import StarRating from "./components/StarRating";
+import { useKey } from "./useKey";
 import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
-import { useKey } from "./useKey";
+import StarRating from "./components/StarRating";
+import { Analytics } from '@vercel/analytics/next';
+
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -70,6 +72,7 @@ export default function App() {
           )}
         </Box>
       </Main>
+      <Analytics />
     </>
   );
 }
