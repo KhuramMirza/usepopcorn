@@ -3,7 +3,6 @@ import { useKey } from "./useKey";
 import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
 import StarRating from "./components/StarRating";
-import { Analytics } from '@vercel/analytics/next';
 
 
 const average = (arr) =>
@@ -72,7 +71,6 @@ export default function App() {
           )}
         </Box>
       </Main>
-      <Analytics />
     </>
   );
 }
