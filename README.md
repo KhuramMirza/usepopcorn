@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# usePopcorn - A React Movie Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"usePopcorn" is a dynamic and interactive web application built with React that allows users to search for movies, view detailed information, rate them, and maintain a personal watchlist. This project was developed to practice and showcase fundamental and advanced React concepts, including state management, component composition, and custom hooks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* **Movie Search**: Seamlessly search for any movie using the OMDb API.
+* **Detailed Movie Information**: View comprehensive details for each movie, including the plot, cast, director, runtime, and poster.
+* **Interactive Rating System**: A 10-star rating system to give a personal rating to movies.
+* **Personal Watchlist**: Add movies you have watched to a persistent watchlist.
+* **Watchlist Statistics**: Get an overview of your watched movies, including the total count, average rating, and total watch time.
+* **Persistent State**: Your watched list is saved in your browser's local storage, so your data is not lost on a page refresh.
+* **Responsive Design**: A user-friendly and responsive layout that works on various screen sizes.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React**: The core of the application is built using the React library.
+* **JavaScript (ES6+)**: Modern JavaScript syntax is used throughout the project.
+* **CSS**: Custom styling for the application's components.
+* **HTML**: The structure of the web application.
+* **OMDb API**: Used to fetch movie data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running, follow these simple steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+You will need to have Node.js and npm (or yarn) installed on your machine. You will also need to get an API key from [OMDb API](https://www.omdbapi.com/apikey.aspx).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/KhuramMirza/usepopcorn.git](https://github.com/KhuramMirza/usepopcorn.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd usepopcorn
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+4.  **Create a `.env` file** in the root of your project and add your OMDb API key like so:
+    ```
+    REACT_APP_OMDB_API_KEY=your_api_key_here
+    ```
+5.  **Start the application:**
+    ```sh
+    npm start
+    ```
+    The application will be available at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Once the application is running, you can use the search bar to look for movies. Click on any movie in the search results to see more details. From the details view, you can rate the movie and add it to your watched list. Your watched list and your ratings will be displayed on the right-hand side of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Acknowledgements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was inspired by and is based on the "usePopcorn" project from the "The Ultimate React Course" by Jonas Schmedtmann.
